@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrümpelungsfirma - Schnell und Zuverlässig</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', 'Open Sans', Arial, sans-serif; /* Moderne Schriftarten */
+    color: #333; /* Dezenter Farbton für professionellen Look */
+    line-height: 1.6; /* Verbesserte Lesbarkeit */
+            margin: 0;
+            padding: 0;
+
+        }
+
+        h2, h3 {
+    font-family: 'Roboto', sans-serif; /* Roboto für moderne und klare Überschriften */
+    font-weight: 700; /* Stärkere Gewichtung für Überschriften */
+    color: #212A31; /* Dezentes Dunkelgrau für Kontrast */
+}
+
+p, label, input, textarea, button {
+    font-family: 'Open Sans', sans-serif; /* Open Sans für Inhalte und Formularelemente */
+    font-weight: 400; /* Normale Gewichtung für Fließtext */
+    color: #555; /* Leicht gedämpfter Farbton */
+}
+        #slogan{
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            }
+        .footerColor{
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            }
+        header {
+    background-color: #212A31; /* Dunkler Hintergrund */
+    color: white; /* Weißer Text für Kontrast */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.contact-info {
+    margin-top: 10px; /* Abstand zum oberen Text */
+    font-size: 14px; /* Kleinere Schrift für Zusatzinfos */
+}
+
+.contact-info a {
+    color: #FFD700; /* Helle Farbe für Telefonnummer */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline; /* Unterstreichung bei Hover */
+}
+
+.contact-info span {
+    color: #FFFFFF; /* Weißer Text für den Standort */
+}
+        nav {
+            background-color: #2E3944;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .service {
+            flex: 1 1 calc(33% - 20px);
+            margin: 10px;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .service.full-width {
+            flex: 1 1 100%;
+            max-width: 100%;
+        }
+        .service img {
+            width: 100%;
+            height: auto;
+            max-height: 200px;
+            object-fit: cover;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        .service h3 {
+            margin-top: 0;
+        }
+        footer {
+            background-color: #333; /* Dunkler Hintergrund */
+            color: white; /* Weißer Text für Kontrast */
+            text-align: center; /* Zentrierung */
+            padding: 20px 10px; /* Polsterung */
+            font-size: 14px; /* Kleinere Schriftgröße für Footer */
+            line-height: 1.6;
+        }
+
+        #numberFooter{
+            color: #FFD700;
+            }
+
+        footer a {
+    color: #007BFF; /* Blau für Links */
+    text-decoration: none; /* Entfernt Unterstreichung */
+    font-weight: bold; /* Hebt Links hervor */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Unterstreichung beim Hover */
+}
+
+footer div {
+    margin-top: 10px; /* Abstand zwischen Text und Links */
+}
+
+        .info-box {
+        max-width: 1000px; /* Begrenzung der Breite */
+        margin: 10px auto; /* Zentrierung durch automatische Ränder */
+        border: 1px solid #ddd;
+        padding: 15px;
+        border-radius: 5px;
+        text-align: center;
+        background-color: white;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+
+
+
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        form input, form textarea, form button {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        form button:hover {
+            background-color: #0056b3;
+        }
+
+        #services h2 {
+            text-align: center;
+        }
+        
+        .infos {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Müllfrei</h1>
+        <p id="slogan">Entrümpelungen, Haushaltsauflösungen und Transporte aller Art</p>
+        <div class="contact-info">
+            <span>📍 Potsdam, Berlin und Umgebungt</span>
+            | <a href="tel:+491234567890">📞 +49 123 4567890</a>
+        </div>
+    </header>
+    <nav>
+        <a href="#services">Unsere Leistungen</a>
+        <a href="#prices">Preise</a>
+        <a href="#about">Über uns</a>
+        <a href="#contact">Kontakt</a>
+    </nav>
+    <section id="services">
+        <h2>Unsere Leistungen</h2>
+        <div class="services">
+            <div class="service">
+                <img src="house.jpg" alt="Hausentrümpelung">
+                <h3>Haus- und Wohnungsentrümpelung</h3>
+                <p>Gründliche Entrümpelung Ihres Hauses oder Ihrer Wohnung.</p>
+            </div>
+            <div class="service">
+                <img src="lager.jpg" alt="Büroentrümpelung">
+                <h3>Keller- und Lagerräumung</h3>
+                <p>Professionelle Entrümpelung von Kellern und Lagerräumen.</p>
+            </div>
+            <div class="service full-width">
+                <img src="sperrmuell.jpg" alt="Sperrmüllentsorgung">
+                <h3>Sperrmüllentsorgung</h3>
+                <p>Fachgerechte und umweltfreundliche Entsorgung von Sperrmüll.</p>
+            </div>
+            <div class="service">
+                <img src="werkzeug.jpg" alt="Möbeltransport und Aufbau">
+                <h3>Möbeltransport und Montageservice</h3>
+                <p>Wir transportieren Ihre neuen Möbel und übernehmen den Aufbau für Sie.</p>
+            </div>
+            <div class="service">
+                <img src="transporter.png" alt="Lagerung">
+                <h3>Transporte aller Art</h3>
+                <p>Kontaktieren Sie uns für ein individuelles Angebot.</p>
+            </div>
+        </div>
+    </section>
+    <section id="prices" class="info-box">
+        <h2>Preise</h2>
+        <p>Wir bieten nach einer kostenlosen und unverbindlichen Besichtigung eine Festpreisgarantie ohne versteckte Kosten!</p>
+    </section>
+    <section id="about" class="info-box">
+        <h2>Über uns</h2>
+        <p>Wir sind ein erfahrenes Team, das sich auf Entrümpelung, Entsorgung und Transporte aller Art im Raum Potsdam, Berlin und Umgebung
+            spezialisiert hat. Egal ob Haus, Wohnung, Büro oder Lager – wir schaffen Platz,
+            wo er benötigt wird. Unsere Kunden schätzen unsere Zuverlässigkeit, Diskretion und schnelle Arbeitsweise.</p>
+    </section>
+    <section id="contact" class="info-box">
+        <h2>Kontakt</h2>
+        <p>Haben Sie Fragen oder möchten Sie einen Termin vereinbaren? Kontaktieren Sie uns noch heute!</p>
+        <form action="#" method="POST">
+            <label for="name">Ihr Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Ihre E-Mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Ihre Nachricht:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Nachricht senden</button>
+        </form>
+    </section>
+    <footer>
+        <div>
+            <a href="impressum.html">Impressum</a> <!-- Link zum Impressum -->
+            | <span>📍 Potsdam, Berlin und Umgebung</span> <!-- Standort -->
+            | <a id="numberFooter" href="tel:+491234567890">📞 +49 123 4567890</a> <!-- Telefonnummer -->
+        </div>
+        <p class="footerColor">&copy; 2025 Müllfrei GbR</p>
+    </footer>
+</body>
+</html>
